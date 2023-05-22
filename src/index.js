@@ -5,18 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from 'react-redux'
+import userReducer from './reducers/userReducer';
 
-const initialState= {
-  name: "Ramesh",
-  age: 20,
-  status: "coder"
-}
+
 
 const store = configureStore({
-  reducer: (state) =>{
-    return state
-  },
-  preloadedState: initialState
+  reducer:userReducer
+  
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
