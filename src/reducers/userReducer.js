@@ -17,7 +17,7 @@ const initialState = {
 // };
 
 export default createReducer(initialState, (builder) => {
-    builder.addCase('UPDATE_AGE', (state, action) =>{
+    builder.addCase('UPDATE_AGE',  (state, action) =>{
         state.age = action.payload
     })
 })

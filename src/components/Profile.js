@@ -11,6 +11,9 @@ function Profile() {
     const updateAge = (age) =>{
         dispatch({type: 'UPDATE_AGE', payload: age })
     }
+    const updateName = (age) =>{
+        dispatch({type: 'UPDATE_AGE', payload: age })
+    }
 
     return (
         <div>
@@ -18,6 +21,7 @@ function Profile() {
             <h2>My age is = {age} </h2>
             <h2>i am a = {status} </h2>
           <button onClick = {() => updateAge(40)}>Update Age</button>
+          <button onClick = {() => updateName(40)}>Update Age</button>
         </div>
     );
 }
